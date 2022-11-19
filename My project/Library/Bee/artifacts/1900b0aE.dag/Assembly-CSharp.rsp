@@ -359,6 +359,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/2Scripts/Follow.cs"
 "Assets/2Scripts/Item.cs"
+"Assets/2Scripts/Orbit.cs"
 "Assets/2Scripts/Player.cs"
 "Assets/QuarterView 3D Action BE5/ReadMe/Scripts/ReadmeBE5.cs"
 -langversion:9.0
