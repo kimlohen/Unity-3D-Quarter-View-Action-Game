@@ -304,7 +304,7 @@ public class Player : MonoBehaviour
         if (other.tag == "Weapon")
             nearObject = other.gameObject;
 
-        Debug.Log(nearObject.name);
+        //Debug.Log(nearObject.name);
     }
 
     void OnTriggerExit(Collider other)
