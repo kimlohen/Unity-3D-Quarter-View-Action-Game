@@ -360,6 +360,7 @@
 "Assets/2Scripts/Bullet.cs"
 "Assets/2Scripts/Enemy.cs"
 "Assets/2Scripts/Follow.cs"
+"Assets/2Scripts/Grenade.cs"
 "Assets/2Scripts/Item.cs"
 "Assets/2Scripts/Orbit.cs"
 "Assets/2Scripts/Player.cs"
