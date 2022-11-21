@@ -368,6 +368,7 @@
 "Assets/2Scripts/Missile.cs"
 "Assets/2Scripts/Orbit.cs"
 "Assets/2Scripts/Player.cs"
+"Assets/2Scripts/Shop.cs"
 "Assets/2Scripts/Weapon.cs"
 "Assets/QuarterView 3D Action BE5/ReadMe/Scripts/ReadmeBE5.cs"
 -langversion:9.0
