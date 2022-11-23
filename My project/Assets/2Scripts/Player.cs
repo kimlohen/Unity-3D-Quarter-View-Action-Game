@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public GameManager manager;
 
     public AudioSource jumpSound;
+    public AudioSource swingSound;
+    public AudioSource shotSound;
 
     public int ammo;
     public int coin;
@@ -164,6 +166,7 @@ public class Player : MonoBehaviour
                 Rigidbody rigidGrenade = instantGrenade.GetComponent<Rigidbody>();
                 rigidGrenade.AddForce(nextVec, ForceMode.Impulse);
                 rigidGrenade.AddTorque(Vector3.back * 10, ForceMode.Impulse);
+                swingSound.Play();
 
                 hasGrenade--;
                 grenades[hasGrenade].SetActive(false);
@@ -181,7 +184,14 @@ public class Player : MonoBehaviour
 
         if (fDown && isFireReady && !isDodge && !isSwap && !isShop && !isDead){
             equipWeapon.Use();
-            anim.SetTrigger(equipWeapon.type == Weapon.Type.Melee ? "doSwing" : "doShot");
+            if(equipWeapon.type == Weapon.Type.Melee){
+                anim.SetTrigger("doSwing");
+                swingSound.Play();
+            }else{
+                anim.SetTrigger("doShot");
+                shotSound.Play();
+            }
+            
             fireDelay = 0;
         }
     }

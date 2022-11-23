@@ -7,6 +7,7 @@ public class Grenade : MonoBehaviour
     public GameObject meshObj;
     public GameObject effectObj;
     public Rigidbody rigid;
+    public AudioSource boomSound;
 
     void Start()
     {
@@ -32,5 +33,6 @@ public class Grenade : MonoBehaviour
         }
 
         Destroy(gameObject, 5);
+        boomSound.Play();
     }
 }
