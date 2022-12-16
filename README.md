@@ -16,7 +16,7 @@ DNFBitBit
 
 [Font Link](https://df.nexon.com/df/data/font)
 
-## BGN Used
+## BGM Used
 
 1. [しゅわしゅわハニーレモン350ml](https://dova-s.jp/EN/bgm/play14640.html)
 
